@@ -1,0 +1,95 @@
+/* line 15, scss/main.scss */
+* {
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+/* line 22, scss/main.scss */
+body {
+  font-size: 15px;
+  background-color: #121417;
+  display: flex;
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  width: 100%; }
+  /* line 31, scss/main.scss */
+  body .modal {
+    display: flex;
+    background-color: #252d37;
+    height: 60vh;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 85vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    max-height: 400px; }
+    /* line 48, scss/main.scss */
+    body .modal-star {
+      width: 40px;
+      height: 40px;
+      background-color: #343f4c;
+      border-radius: 50%; }
+      /* line 54, scss/main.scss */
+      body .modal-star .star {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    /* line 62, scss/main.scss */
+    body .modal-wrapper {
+      width: 85%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      /* line 70, scss/main.scss */
+      body .modal-wrapper .title {
+        color: white;
+        text-align: left;
+        font-size: 20px;
+        letter-spacing: 2px; }
+      /* line 77, scss/main.scss */
+      body .modal-wrapper .text {
+        color: #959eac;
+        flex-wrap: wrap;
+        text-align: left;
+        line-height: 25px; }
+      /* line 85, scss/main.scss */
+      body .modal-wrapper .rating {
+        display: flex;
+        justify-content: space-between; }
+        /* line 91, scss/main.scss */
+        body .modal-wrapper .rating-option {
+          color: #959eac;
+          background-color: #343f4c;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 40px; }
+        /* line 101, scss/main.scss */
+        body .modal-wrapper .rating-option:hover {
+          color: white;
+          background-color: #959eac;
+          cursor: pointer; }
+      /* line 109, scss/main.scss */
+      body .modal-wrapper .submit-button {
+        background-color: #fb7413;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        height: 50px; }
+      /* line 120, scss/main.scss */
+      body .modal-wrapper .submit-button:hover {
+        background-color: white;
+        color: #fb7413;
+        cursor: pointer; }

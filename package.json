@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.50.1"
+  },
+  "name": "01.interactive-rating-component-main",
+  "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "default": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style -watch -o css scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3xen11/interactive-rating-component.git"
+  },
+  "author": "Dawid Dardziński",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3xen11/interactive-rating-component/issues"
+  },
+  "homepage": "https://github.com/3xen11/interactive-rating-component#readme"
+}
