@@ -68,7 +68,11 @@ body {
         body .modal-wrapper .rating-modal .rating {
           display: flex;
           justify-content: space-between; }
-          /* line 94, scss/main.scss */
+          /* line 92, scss/main.scss */
+          body .modal-wrapper .rating-modal .rating .active-rating {
+            background-color: #fb7413;
+            color: white; }
+          /* line 97, scss/main.scss */
           body .modal-wrapper .rating-modal .rating-option {
             color: #959eac;
             background-color: #343f4c;
@@ -77,12 +81,12 @@ body {
             border-radius: 50%;
             text-align: center;
             line-height: 40px; }
-          /* line 104, scss/main.scss */
+          /* line 107, scss/main.scss */
           body .modal-wrapper .rating-modal .rating-option:hover {
             color: white;
             background-color: #959eac;
             cursor: pointer; }
-        /* line 112, scss/main.scss */
+        /* line 115, scss/main.scss */
         body .modal-wrapper .rating-modal .submit-button {
           background-color: #fb7413;
           color: white;
@@ -91,21 +95,21 @@ body {
           letter-spacing: 2px;
           text-transform: uppercase;
           height: 50px; }
-        /* line 123, scss/main.scss */
+        /* line 126, scss/main.scss */
         body .modal-wrapper .rating-modal .submit-button:hover {
           background-color: white;
           color: #fb7413;
           cursor: pointer; }
-      /* line 130, scss/main.scss */
+      /* line 133, scss/main.scss */
       body .modal-wrapper .gratitude-modal {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center; }
-        /* line 136, scss/main.scss */
+        /* line 139, scss/main.scss */
         body .modal-wrapper .gratitude-modal .gratitude-photo {
           width: 150px; }
-        /* line 140, scss/main.scss */
+        /* line 143, scss/main.scss */
         body .modal-wrapper .gratitude-modal .user-option {
           color: #fb7413;
           background-color: #343f4c;
@@ -115,17 +119,21 @@ body {
           line-height: 30px;
           border-radius: 50px;
           letter-spacing: 1px; }
-          /* line 150, scss/main.scss */
+          /* line 153, scss/main.scss */
           body .modal-wrapper .gratitude-modal .user-option .user-choice {
             display: inline-block; }
-        /* line 155, scss/main.scss */
+        /* line 158, scss/main.scss */
         body .modal-wrapper .gratitude-modal .gratitude-title {
           letter-spacing: 1px;
           color: white;
           font-weight: 400; }
-        /* line 161, scss/main.scss */
+        /* line 164, scss/main.scss */
         body .modal-wrapper .gratitude-modal .gratitude-text {
           text-align: center;
           color: #959eac;
           font-size: 15px;
           line-height: 23px; }
+
+/* line 175, scss/main.scss */
+.hide {
+  display: none !important; }

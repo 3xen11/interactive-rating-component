@@ -89,7 +89,10 @@ body {
                     display: flex;
                     justify-content: space-between;
 
-
+                    .active-rating {
+                        background-color: $primary;
+                        color: $white;
+                    }
 
                     &-option {
                         color: $light-grey;
@@ -169,6 +172,6 @@ body {
     }
 }
 
-// .hide {
-//     display: none !important;
-// }
+.hide {
+    display: none !important;
+}
