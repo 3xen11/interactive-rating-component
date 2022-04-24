@@ -4,27 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <title>Frontend Mentor | Interactive rating component</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Ubuntu+Condensed&display=swap"
     rel="stylesheet">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="./css/main.css">
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -32,45 +16,42 @@
   <!-- Rating state start -->
   <div class="modal">
     <div class="modal-wrapper">
-      <div class="modal-star"> <img src="./images/icon-star.svg" alt="star" class="star"></div>
 
-      <h1 class="title"> How did we do?</h1>
+      <!-- <div class="rating-modal">
+        <div class="modal-star"> <img src="./images/icon-star.svg" alt="star" class="star"></div>
+        <h1 class="title"> How did we do?</h1>
+        <span class="text"> Please let us know how we did with your support request. All feedback is
+          appreciated
+          to help us improve our offering!</span>
+        <div class="rating">
+          <div class="rating-option">1</div>
+          <div class="rating-option">2</div>
+          <div class="rating-option">3</div>
+          <div class="rating-option">4</div>
+          <div class="rating-option">5</div>
+        </div>
+        <button class="submit-button">Submit</button>
+      </div> -->
 
-      <span class="text"> Please let us know how we did with your support request. All feedback is
-        appreciated
-        to help us improve our offering!</span>
-
-      <div class="rating">
-        <div class="rating-option">1</div>
-        <div class="rating-option">2</div>
-        <div class="rating-option">3</div>
-        <div class="rating-option">4</div>
-        <div class="rating-option">5</div>
+      <div class="gratitude-modal hide">
+        <img src="./images/illustration-thank-you.svg" alt="thx-image" class="gratitude-photo">
+        <div class="user-option">You selected <span class="user-choice"> 4 out of 5</span> </div>
+        <h2 class="gratitude-title">Thank you!</h2>
+        <span class="gratitude-text"> We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </span>
       </div>
 
 
-      <button class="submit-button">Submit</button>
     </div>
   </div>
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-  <!-- 
-  You selected -->
-  <!-- Add rating here out of 5 -->
-
-  <!-- Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
 
 
-  <!-- <div class="attribution">
+  <script src="script.js"></script>
+</body>
+<!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Dawid Dardziński</a>.
   </div> -->
-</body>
 
 </html>

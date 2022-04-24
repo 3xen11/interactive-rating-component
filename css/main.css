@@ -31,65 +31,101 @@ body {
     max-width: 350px;
     max-height: 400px; }
     /* line 48, scss/main.scss */
-    body .modal-star {
-      width: 40px;
-      height: 40px;
-      background-color: #343f4c;
-      border-radius: 50%; }
-      /* line 54, scss/main.scss */
-      body .modal-star .star {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-    /* line 62, scss/main.scss */
     body .modal-wrapper {
       width: 85%;
       height: 80%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      /* line 70, scss/main.scss */
-      body .modal-wrapper .title {
-        color: white;
-        text-align: left;
-        font-size: 20px;
-        letter-spacing: 2px; }
-      /* line 77, scss/main.scss */
-      body .modal-wrapper .text {
-        color: #959eac;
-        flex-wrap: wrap;
-        text-align: left;
-        line-height: 25px; }
-      /* line 85, scss/main.scss */
-      body .modal-wrapper .rating {
+      display: flex; }
+      /* line 53, scss/main.scss */
+      body .modal-wrapper .rating-modal {
         display: flex;
+        flex-direction: column;
         justify-content: space-between; }
-        /* line 91, scss/main.scss */
-        body .modal-wrapper .rating-option {
-          color: #959eac;
-          background-color: #343f4c;
+        /* line 59, scss/main.scss */
+        body .modal-wrapper .rating-modal .modal-star {
           width: 40px;
           height: 40px;
-          border-radius: 50%;
-          text-align: center;
-          line-height: 40px; }
-        /* line 101, scss/main.scss */
-        body .modal-wrapper .rating-option:hover {
+          background-color: #343f4c;
+          border-radius: 50%; }
+          /* line 65, scss/main.scss */
+          body .modal-wrapper .rating-modal .modal-star .star {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+        /* line 73, scss/main.scss */
+        body .modal-wrapper .rating-modal .title {
           color: white;
-          background-color: #959eac;
+          text-align: left;
+          font-size: 20px;
+          letter-spacing: 2px; }
+        /* line 80, scss/main.scss */
+        body .modal-wrapper .rating-modal .text {
+          color: #959eac;
+          flex-wrap: wrap;
+          text-align: left;
+          line-height: 25px; }
+        /* line 88, scss/main.scss */
+        body .modal-wrapper .rating-modal .rating {
+          display: flex;
+          justify-content: space-between; }
+          /* line 94, scss/main.scss */
+          body .modal-wrapper .rating-modal .rating-option {
+            color: #959eac;
+            background-color: #343f4c;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px; }
+          /* line 104, scss/main.scss */
+          body .modal-wrapper .rating-modal .rating-option:hover {
+            color: white;
+            background-color: #959eac;
+            cursor: pointer; }
+        /* line 112, scss/main.scss */
+        body .modal-wrapper .rating-modal .submit-button {
+          background-color: #fb7413;
+          color: white;
+          border: none;
+          border-radius: 50px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          height: 50px; }
+        /* line 123, scss/main.scss */
+        body .modal-wrapper .rating-modal .submit-button:hover {
+          background-color: white;
+          color: #fb7413;
           cursor: pointer; }
-      /* line 109, scss/main.scss */
-      body .modal-wrapper .submit-button {
-        background-color: #fb7413;
-        color: white;
-        border: none;
-        border-radius: 50px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        height: 50px; }
-      /* line 120, scss/main.scss */
-      body .modal-wrapper .submit-button:hover {
-        background-color: white;
-        color: #fb7413;
-        cursor: pointer; }
+      /* line 130, scss/main.scss */
+      body .modal-wrapper .gratitude-modal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
+        /* line 136, scss/main.scss */
+        body .modal-wrapper .gratitude-modal .gratitude-photo {
+          width: 150px; }
+        /* line 140, scss/main.scss */
+        body .modal-wrapper .gratitude-modal .user-option {
+          color: #fb7413;
+          background-color: #343f4c;
+          width: 170px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          border-radius: 50px;
+          letter-spacing: 1px; }
+          /* line 150, scss/main.scss */
+          body .modal-wrapper .gratitude-modal .user-option .user-choice {
+            display: inline-block; }
+        /* line 155, scss/main.scss */
+        body .modal-wrapper .gratitude-modal .gratitude-title {
+          letter-spacing: 1px;
+          color: white;
+          font-weight: 400; }
+        /* line 161, scss/main.scss */
+        body .modal-wrapper .gratitude-modal .gratitude-text {
+          text-align: center;
+          color: #959eac;
+          font-size: 15px;
+          line-height: 23px; }

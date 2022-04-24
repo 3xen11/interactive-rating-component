@@ -7,10 +7,13 @@
   "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
   "version": "1.0.0",
   "default": "index.html",
-  "devDependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --output-style -watch -o css scss"
+    "scss": "node-sass --output-style -watch -o css scss",
+    "start": "lite-server"
   },
   "repository": {
     "type": "git",

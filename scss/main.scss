@@ -45,86 +45,130 @@ body {
         max-width: 350px;
         max-height: 400px;
 
-        &-star {
-            width: 40px;
-            height: 40px;
-            background-color: hsl(213, 19%, 25%);
-            border-radius: 50%;
-
-            .star {
-                position: relative;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-
         &-wrapper {
             width: 85%;
             height: 80%;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
 
-
-            .title {
-                color: $white;
-                text-align: left;
-                font-size: 20px;
-                letter-spacing: 2px;
-            }
-
-            .text {
-                color: $light-grey;
-                flex-wrap: wrap;
-                text-align: left;
-                line-height: 25px;
-
-            }
-
-            .rating {
+            .rating-modal {
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
 
 
-
-                &-option {
-                    color: $light-grey;
-                    background-color: hsl(213, 19%, 25%);
+                .modal-star {
                     width: 40px;
                     height: 40px;
+                    background-color: hsl(213, 19%, 25%);
                     border-radius: 50%;
-                    text-align: center;
-                    line-height: 40px;
+
+                    .star {
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
                 }
 
-                &-option:hover {
+                .title {
                     color: $white;
-                    background-color: $light-grey;
+                    text-align: left;
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+
+                .text {
+                    color: $light-grey;
+                    flex-wrap: wrap;
+                    text-align: left;
+                    line-height: 25px;
+
+                }
+
+                .rating {
+                    display: flex;
+                    justify-content: space-between;
+
+
+
+                    &-option {
+                        color: $light-grey;
+                        background-color: hsl(213, 19%, 25%);
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 40px;
+                    }
+
+                    &-option:hover {
+                        color: $white;
+                        background-color: $light-grey;
+                        cursor: pointer;
+                    }
+                }
+
+
+                .submit-button {
+                    background-color: $primary;
+                    color: $white;
+                    border: none;
+                    border-radius: 50px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    height: 50px;
+
+                }
+
+                .submit-button:hover {
+                    background-color: $white;
+                    color: $primary;
                     cursor: pointer;
                 }
             }
 
+            .gratitude-modal {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
 
-            .submit-button {
-                background-color: $primary;
-                color: $white;
-                border: none;
-                border-radius: 50px;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                height: 50px;
+                .gratitude-photo {
+                    width: 150px;
+                }
 
-            }
+                .user-option {
+                    color: $primary;
+                    background-color: hsl(213, 19%, 25%);
+                    width: 170px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 50px;
+                    letter-spacing: 1px;
 
-            .submit-button:hover {
-                background-color: $white;
-                color: $primary;
-                cursor: pointer;
+                    .user-choice {
+                        display: inline-block
+                    }
+                }
+
+                .gratitude-title {
+                    letter-spacing: 1px;
+                    color: $white;
+                    font-weight: 400;
+                }
+
+                .gratitude-text {
+                    text-align: center;
+                    color: $light-grey;
+                    font-size: $fsize;
+                    line-height: 23px;
+                }
             }
         }
-
-
-
     }
 }
+
+// .hide {
+//     display: none !important;
+// }
